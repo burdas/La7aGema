@@ -4,3 +4,9 @@ Este es el reositorio de un proyecto realizado para la asignatura Ingeniería We
 
 El proyecto es un sitio web en el cual aparecen un listado de peliculas. De ellas se puede observar su caratula, título, genero, actores y demás datos. Presenta un registro de usuarios los cuales pueden valorar estas películas y comentarlas.
 Para el desarrollo del proyecto se ha utilizado el patrón modelo-vista-controlado en PHP y en la parte de almacenamiento de datos se ha usado MySQL. Finalmente para la obtención de los datos de las peliculas se ha usado la API de [The Movie Database](https://developers.themoviedb.org/3/getting-started/introduction)
+
+## Página principal de La Séptima Gema, Top tendencias:
+![Página principal de La Séptima Gema](muestra1.png "Página principal de La Séptima Gema")
+
+## Página de una película de La Séptima Gema:
+![Página de una película de La Séptima Gema](muestra2.png "Página de una película de La Séptima Gema")
