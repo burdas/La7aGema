@@ -14,6 +14,8 @@ Para el desarrollo del proyecto se han utilizado los siguiente recursos:
 - Bootstrap
 - API datos peliculas [The Movie Database](https://developers.themoviedb.org/3/getting-started/introduction)
 
+Memoria del proyecto: [Memoria](Memoria.pdf)
+
 ## Página principal de La Séptima Gema, Top tendencias:
 ![Página principal de La Séptima Gema](muestra1.png "Página principal de La Séptima Gema")
 
