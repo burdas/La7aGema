@@ -1,0 +1,86 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <img id="poster" class="img-fluid" alt="imagen de portada">
+            <div class="row">
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-10" id="bloqueValoraciones">
+                    <p><strong>Valoración media:</strong></p>
+                    ##PUNTUACIONMEDIA##
+                </div>
+                <div class="col-lg-1">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <h1 id="titulo" class="text-center"></h1>
+            <p id="sinopsis"></p>
+            <div class="row">
+                <div class="col-lg-2">
+
+                </div>
+                <div class="col-lg-8">
+                    <p id="generos"><strong>Generos: </strong></p>
+                    <p id="productoras"><strong>Productora: </strong></p>
+                    <p id="lanzamiento"><strong>Fecha de lanzamiento: </strong></p>
+                    <p id="duracion"><strong>Duración: </strong></p>
+                    <p id="web"><strong>Web oficial: </strong></p>
+                    <p id="reparto"><strong>Reparto: </strong></p>
+                    <p id="directores"><strong>Dirección: </strong></p>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    ##COMENTARIOS##
+    <div class="row">
+        <div class="col-lg-3">
+            <button id="btnAtras" type="button" class="btn btn-secondary btn-block btn-lg">Atras</button>
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+        <div class="col-lg-3">
+            ##BOTONCOMENTARIOS##
+        </div>
+    </div>
+</div>
+
+<!-- Modal para comentar con bootstrap -->
+<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form id="commentForm" method="POST">
+                <div class="modal-header">
+                    <h2 class="modal-title h5" id="commentModalLabel">Escribe aquí tu comentario</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body form-group">
+                    <div class="col form-group">
+                        <label for="valoracion">Valoración:</label><br>
+                        <span class="fa fa-star fa-lg" id="Estrella1"></span>
+                        <span class="fa fa-star fa-lg" id="Estrella2"></span>
+                        <span class="fa fa-star fa-lg" id="Estrella3"></span>
+                        <span class="fa fa-star fa-lg" id="Estrella4"></span>
+                        <span class="fa fa-star fa-lg" id="Estrella5"></span><br>
+                        <input type="hidden" id="entradaValoracion" name="entradaValoracion" value="0">
+                        <input type="hidden" id="idPelicula" name="idPelicula" value="0">
+                        <label for="comment">Comentario:</label>
+                        <textarea class="form-control" rows="5" id="comment" name="comentario"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col text-right">
+                        <button id="btnEnviar" type="submit" class="btn btn-primary" disabled>Comentar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

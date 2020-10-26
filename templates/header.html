@@ -1,0 +1,88 @@
+<header id="cabecera">
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+                <a href="?action=novedades" class="nav-item nav-link" id="navNovedades" >Novedades</a>
+                <a href="?action=buscar" class="nav-item nav-link" id="navBuscar">Buscar</a>
+            </div>
+            <div class="navbar-nav mx-auto">
+                <!-- <a href="?action=novedades" class="navbar-brand">La séptima gema</a> -->
+                <a href="?action=mainPage" ><img src="./img/gem2.svg" alt="gema oscura" style="height:40px"></div></a>
+            </div>
+            <div class="navbar-nav">
+                <a href="?action=about" class="nav-item nav-link" id="navAbout">Sobre nosotros</a>
+            </div>
+            <div class="navbar-nav">
+                <button class="nav-item btn btn-outline-primary" id="login" data-toggle="modal" data-target="#loginModal">Iniciar sesión</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Modal de login de bootstrap -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form id="loginForm" method="POST">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body form-group">
+                    <div class="col form-group">
+                        <label for="username">Usuario</label>
+                        <input type="text" name="username" id="username" class="form-control" placeholder="Usuario" required>
+                        <label for="pass">Contraseña</label>
+                        <input type="password" name="pass" id="pass" class="form-control" placeholder="Contraseña" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">Registrarse</button>
+                    </div>
+                    <div class="col text-right">
+                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de registrp de bootstrap -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form id="registerForm" method="POST">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body form-group">
+                    <div class="col form-group">
+                        <label for="usernameR">Usuario</label>
+                        <input type="text" name="usernameR" id="usernameR" class="form-control" placeholder="Usuario" required>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Correo electrónico" required>
+                        <label for="passR">Contraseña</label>
+                        <input type="password" name="passR" id="passR" class="form-control" placeholder="Contraseña" required>
+                        <label for="pass2">Repetir contraseña</label>
+                        <input type="password" name="passR2" id="passR2" class="form-control" placeholder="Repetir contraseña" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Iniciar sesión</button>
+                    </div>
+                    <div class="col text-right">
+                        <button type="submit" class="btn btn-primary">Crear cuenta</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

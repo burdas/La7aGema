@@ -1,0 +1,16 @@
+h2, h5 {
+    text-align: center;
+}
+
+.clicable {
+    cursor: pointer;
+}
+
+.card {
+    min-width: 200px;
+    max-width: 400px;
+}
+
+#imgPortada {
+    max-width: 160px;
+}

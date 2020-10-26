@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+#poster {
+    width: 100%;
+}
+
+#sinopsis {
+    margin: 20px;
+}
+
+#titulo {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.checked {
+    color: orange;
+}
+
+.card {
+    margin: 20px 0px 20px 0px;
+}
+
+.fa-star {
+    margin-bottom: 10px;
+}
+
+.btn-comentar {
+    margin-bottom: 20px;
+}
+
+#poster {
+    margin-bottom: 10px;
+}
+
+#bloqueValoraciones span {
+    margin: 0px 5px 0px 5px;
+}
+
+.fa-times {
+    color: crimson;
+    margin-left: 10px;
+}

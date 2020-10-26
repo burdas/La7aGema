@@ -1,0 +1,29 @@
+.jumbotron{
+	margin:0;
+}
+.link-peli, .link-peli:hover{
+	text-decoration: none;
+	color:black;
+}
+.container {
+    display: flex;
+    align-items: stretch;
+}
+.btn-link{
+	border-bottom: 1;
+}
+
+.col-3{
+	display: inline-flex;
+}
+.tab-pane{
+	padding: 30px;
+}
+.container-fluid{
+	margin-top: 20px;
+}
+.row{
+	margin: 20px;
+	align-items: center;
+}
+
